@@ -1,14 +1,39 @@
 {
-  "name": "challenge_week7",
-  "version": "1.0.0",
-  "description": "Challenge Week 7",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Patricia Rufino",
-  "license": "ISC",
-  "prettier": {
-    "singleQuote": true
-  }
+    "name": "challenge_week7",
+    "version": "1.0.0",
+    "description": "Challenge Week 7",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "",
+        "test": "jest --watchAll",
+        "lint": "eslint .",
+        "prepare": "husky install"
+    },
+    "author": "Patricia Rufino",
+    "license": "ISC",
+    "prettier": {
+        "singleQuote": true
+    },
+    "devDependencies": {
+        "@babel/core": "^7.20.2",
+        "@babel/preset-env": "^7.20.2",
+        "@types/jest": "^29.2.3",
+        "@typescript-eslint/eslint-plugin": "^5.43.0",
+        "@typescript-eslint/parser": "^5.43.0",
+        "babel-jest": "^29.3.1",
+        "eslint": "^8.28.0",
+        "eslint-config-prettier": "^8.5.0",
+        "husky": "^8.0.2",
+        "jest": "^29.3.1"
+    },
+    "babel": {
+        "env": {
+            "test": {
+                "plugins": [
+                    "@babel/plugin-transform-modules-commonjs"
+                ]
+            }
+        }
+    }
 }
