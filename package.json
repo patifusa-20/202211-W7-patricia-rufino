@@ -1,18 +1,24 @@
 {
-  "name": "challenge_week7",
-  "version": "1.0.0",
-  "description": "Challenge Week 7",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
-  },
-  "author": "Patricia Rufino",
-  "license": "ISC",
-  "prettier": {
-    "singleQuote": true
-  },
-  "devDependencies": {
-    "husky": "^8.0.2"
-  }
+    "name": "challenge_week7",
+    "version": "1.0.0",
+    "description": "Challenge Week 7",
+    "main": "index.js",
+    "scripts": {
+        "start": "",
+        "test": "",
+        "lint": "eslint .",
+        "prepare": "husky install"
+    },
+    "author": "Patricia Rufino",
+    "license": "ISC",
+    "prettier": {
+        "singleQuote": true
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.43.0",
+        "@typescript-eslint/parser": "^5.43.0",
+        "eslint": "^8.28.0",
+        "eslint-config-prettier": "^8.5.0",
+        "husky": "^8.0.2"
+    }
 }
