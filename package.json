@@ -5,8 +5,10 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "start": "",
-        "test": "jest --watchAll",
+        "start": "tsc --watch",
+        "build": "tsc",
+        "test": "jest --watchAll --coverage",
+        "test:prod": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
         "lint": "eslint .",
         "prepare": "husky install"
     },
