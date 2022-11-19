@@ -1,0 +1,14 @@
+{
+  "name": "challenge_week7",
+  "version": "1.0.0",
+  "description": "Challenge Week 7",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patricia Rufino",
+  "license": "ISC",
+  "prettier": {
+    "singleQuote": true
+  }
+}
