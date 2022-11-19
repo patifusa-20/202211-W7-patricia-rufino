@@ -1,5 +1,6 @@
 /.vscode
 /.husky
+/dist/scripts
 
 # Logs
 logs
