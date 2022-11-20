@@ -1,4 +1,4 @@
-<img align="right" width="179" height="118" alt="ISDI CODER LOGO" src="/assets/isdi_logo_hq.jpg">
+<img align="right" width="179" height="118" alt="ISDI CODER LOGO" src="/dist/assets/isdi_logo_hq.jpg">
 
 # :zap: Challenge Week 7
 
@@ -7,16 +7,17 @@
 Tendrás que programar un interfaz de usuario para que refleje el siguiente modelo de datos:
 
 En **_"Juego de Tronos"_** existen personajes. Todos esos personajes tienen la siguiente información:
-· Nombre
-· Familia a la que pertenece
-· Edad
-· Estado (vivo o muerto, aunque inicialmente todos están vivos)
 
-Todos los personajes pueden realizar la acción de comunicar, pero cada tipo de personaje (no cada personaje) se comunica de un modo distinto. **_Nota:_** este método devuelve el string con la frase, no imprime por consola.
+-   Nombre
+-   Familia a la que pertenece
+-   Edad
+-   Estado (vivo o muerto, aunque inicialmente todos están vivos)
 
-Todos los personajes pueden realizar la acción de morir, cambiándose su estado a muerto.
+Todos los personajes pueden hacer lo siguiente:
 
-Todos los personajes pertenecen a la misma serie, **_"Juego de Tronos"_**.
+-   Realizar la acción de comunicar, pero cada tipo de personaje (no cada personaje) se comunica de un modo distinto. **_Nota:_** este método devuelve el string con la frase, no imprime por consola.
+-   Pueden realizar la acción de morir, cambiándose su estado a muerto.
+-   Pertenecen a la misma serie, **_"Juego de Tronos"_**.
 
 Cada uno de esos personajes puede ser un rey, un luchador, un asesor, o un escudero.
 
@@ -48,13 +49,13 @@ Crea los siguientes archivos JS y haz que funcionen como módulos mediante impor
 -   [x] `personaje.js`, Rey.js, Luchador.js, Asesor.js, Escudero.js (mete dentro cada clase)
 -   [x] `personajes.js` (crea dentro un array con los personajes.
 
-|  NOMBRE  | APELLIDO  |        ROL         |
-| :------: | :-------: | :----------------: |
-| Joffrey  | Baratheon |        Rey         |
-|  Jaime   | Lannister |      Luchador      |
-| Daenerys | Targaryen |     Luchadora      |
-|  Tyrion  | Lannister | Asesor de Daenerys |
-|  Bronn   |     -     | Escudero de Jaime  |
+| ICONO |  NOMBRE  | APELLIDO  |        ROL         |
+| :---: | :------: | :-------: | :----------------: |
+|  👑   | Joffrey  | Baratheon |        Rey         |
+|   🗡   |  Jaime   | Lannister |      Luchador      |
+|   🗡   | Daenerys | Targaryen |     Luchadora      |
+|  🎓   |  Tyrion  | Lannister | Asesor de Daenerys |
+|   🛡   |  Bronn   |     -     | Escudero de Jaime  |
 
 -   [x] `index.js` (aquí va todo el resto del enunciado, y éste será el punto de entrada)
 
@@ -69,8 +70,8 @@ Crea los siguientes archivos JS y haz que funcionen como módulos mediante impor
 
 ## Resultado
 
-https://sonarcloud.io/summary/overall?id=patifusa-20_202211-W7-patricia-rufino
+https://sonarcloud.io/summary/overall?id=patifusa-20_202211-W7-patricia-rufino-
 
 ## Tecnologías usadas
 
-![Logos of used technologies](/assets/tech_logos_v2.jpg)
+![Logos of used technologies](/dist/assets/tech_logos_v2.jpg)
