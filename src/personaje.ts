@@ -9,6 +9,7 @@ export interface CharacterTypes {
     sentence: string;
     isAlive: boolean;
     image: string;
+    icon: string;
     years?: number;
     weapon?: string;
     skill?: number;
@@ -27,7 +28,8 @@ export class Character implements CharacterTypes {
         public role: string,
         public sentence: string,
         public isAlive: boolean = true,
-        public image: string
+        public image: string,
+        public icon: string
     ) {
         this.name = name;
         this.family = family;
@@ -55,9 +57,10 @@ export class King extends Character {
         public sentence: string,
         public isAlive: boolean = true,
         public image: string,
+        public icon: string,
         public years: number
     ) {
-        super(name, family, age, role, sentence, isAlive, image);
+        super(name, family, age, role, sentence, isAlive, image, icon);
         this.years = years;
     }
     death() {
@@ -74,10 +77,11 @@ export class Fighter extends Character {
         public sentence: string,
         public isAlive: boolean = true,
         public image: string,
+        public icon: string,
         public weapon: string,
         public skill: number
     ) {
-        super(name, family, age, role, sentence, isAlive, image);
+        super(name, family, age, role, sentence, isAlive, image, icon);
         this.weapon = weapon;
         this.skill = skill;
     }
@@ -95,9 +99,10 @@ export class Adviser extends Character {
         public sentence: string,
         public isAlive: boolean = true,
         public image: string,
+        public icon: string,
         public advisedCharacter: string | undefined
     ) {
-        super(name, family, age, role, sentence, isAlive, image);
+        super(name, family, age, role, sentence, isAlive, image, icon);
         this.advisedCharacter = advisedCharacter;
     }
     death() {
@@ -114,10 +119,11 @@ export class Squire extends Character {
         public sentence: string,
         public isAlive: boolean = true,
         public image: string,
+        public icon: string,
         public advisedCharacter: string | undefined,
         public greasy: number
     ) {
-        super(name, family, age, role, sentence, isAlive, image);
+        super(name, family, age, role, sentence, isAlive, image, icon);
         this.advisedCharacter = advisedCharacter;
         this.greasy = greasy;
     }

@@ -10,3 +10,12 @@ const renderContent = () => {
 };
 
 renderContent();
+// BOTÓN "HABLA"
+const talkBtn = (event: Event) => {
+    const buttonElement = event.target as HTMLButtonElement;
+    const talkButton = document.querySelectorAll('#btn-talk');
+    function clickButton() {
+        console.log('he pulsado el botón');
+    }
+    talkButton.addEventListener('click', clickButton);
+};

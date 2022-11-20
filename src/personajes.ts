@@ -10,6 +10,7 @@ export const characters = () => {
         'Vais a morir todos',
         true,
         'assets/img/joffrey.jpg',
+        '&#x1F451;',
         3
     );
     const character2: CharacterTypes = new Fighter(
@@ -20,6 +21,7 @@ export const characters = () => {
         'Primero pego y luego pregunto',
         true,
         'assets/img/jaime.jpg',
+        '&#x1F5E1;',
         'espada',
         8
     );
@@ -31,6 +33,7 @@ export const characters = () => {
         'Primero pego y luego pregunto',
         true,
         'assets/img/daenerys.jpg',
+        '&#x1F5E1;',
         'látigo',
         9
     );
@@ -42,6 +45,7 @@ export const characters = () => {
         'No sé por qué, pero creo que voy a morir pronto',
         true,
         'assets/img/tyrion.jpg',
+        '&#x1F393;',
         character3.name
     );
     const character5: CharacterTypes = new Squire(
@@ -52,19 +56,14 @@ export const characters = () => {
         'Soy un loser',
         true,
         'assets/img/bronn.jpg',
+        '&#x1F6E1;',
         character2.name,
         8
     );
 
-    const charactersList0 = [character1, character2, character3];
-    const charactersList1 = [
-        character1,
-        character2,
-        character3,
-        character4,
-        character5,
-    ];
+    const charactersList = [character1, character2, character3];
+    charactersList.push(character4, character5);
 
-    console.table(charactersList1);
-    return charactersList1;
+    console.table(charactersList);
+    return charactersList;
 };

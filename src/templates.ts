@@ -29,7 +29,7 @@ export const createContent = (characters: Array<CharacterTypes>) => {
                     <div class="card character__card">
                         <img
                             src=${item.image}
-                            alt="Nombre y familia del personaje"
+                            alt="${item.name} ${item.family}"
                             class="character__picture card-img-top"
                         />
                         <div class="card-body">
@@ -55,7 +55,7 @@ export const createContent = (characters: Array<CharacterTypes>) => {
                                 )}                                  
                                 </ul>
                                 <div class="character__actions">
-                                    <button class="character__action btn">
+                                    <button class="character__action btn" id="btn-talk">
                                         habla
                                     </button>
                                     <button class="character__action btn">
@@ -64,19 +64,22 @@ export const createContent = (characters: Array<CharacterTypes>) => {
                                 </div>
                             </div>
                         </div>
-                        <i class="emoji"></i>
+                        <i class="emoji">${item.icon}</i>
                     </div>
                 </li>`;
     });
-    contentTemplate += `</ul></div><div class="comunications">
+    contentTemplate += `</ul></div><div class="comunications">`;
+    characters.forEach((item) => {
+        contentTemplate += `
             <p class="comunications__text display-1">
-                Una frase que dice alguien
+                ${item.sentence}
             </p>
             <img
                 class="comunications__picture"
-                src="assets/img/no-one.jpg"
-                alt="Nombre y familia del que habla"
+                src="${item.image}"
+                alt="${item.name} ${item.family}"
             /></div>`;
+    });
 
     return contentTemplate;
 };

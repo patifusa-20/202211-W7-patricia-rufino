@@ -69,6 +69,8 @@ Crea los siguientes archivos JS y haz que funcionen como módulos mediante impor
 
 ## Resultado
 
+https://patricia-challenge-w7.netlify.app/
+
 https://sonarcloud.io/summary/overall?id=patifusa-20_202211-W7-patricia-rufino-
 
 ## Tecnologías usadas
