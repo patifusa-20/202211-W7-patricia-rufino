@@ -1,10 +1,4 @@
-import {
-    CharacterTypes,
-    Character,
-    King,
-    Fighter,
-    Adviser,
-} from './personaje.js';
+import { CharacterTypes, King, Fighter, Adviser, Squire } from './personaje.js';
 
 export const characters = () => {
     // Instanciamos todos los personajes.
@@ -15,6 +9,8 @@ export const characters = () => {
         'rey',
         'Vais a morir todos',
         true,
+        'assets/img/joffrey.jpg',
+        '&#x1F451;',
         3
     );
     const character2: CharacterTypes = new Fighter(
@@ -24,6 +20,8 @@ export const characters = () => {
         'luchador',
         'Primero pego y luego pregunto',
         true,
+        'assets/img/jaime.jpg',
+        '&#x1F5E1;',
         'espada',
         8
     );
@@ -34,6 +32,8 @@ export const characters = () => {
         'luchadora',
         'Primero pego y luego pregunto',
         true,
+        'assets/img/daenerys.jpg',
+        '&#x1F5E1;',
         'látigo',
         9
     );
@@ -44,25 +44,26 @@ export const characters = () => {
         'asesor de Daenerys',
         'No sé por qué, pero creo que voy a morir pronto',
         true,
+        'assets/img/tyrion.jpg',
+        '&#x1F393;',
         character3.name
     );
-    const character5: CharacterTypes = new Character(
+    const character5: CharacterTypes = new Squire(
         'Bronn',
         '',
         27,
         'escudero de Jaime',
-        'Soy un loser'
+        'Soy un loser',
+        true,
+        'assets/img/bronn.jpg',
+        '&#x1F6E1;',
+        character2.name,
+        8
     );
 
-    const charactersList0 = [character1, character2, character3];
-    const charactersList1 = [
-        character1,
-        character2,
-        character3,
-        character4,
-        character5,
-    ];
+    const charactersList = [character1, character2, character3];
+    charactersList.push(character4, character5);
 
-    console.table(charactersList0);
-    console.table(charactersList1);
+    console.table(charactersList);
+    return charactersList;
 };
