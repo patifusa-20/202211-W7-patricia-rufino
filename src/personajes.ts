@@ -1,10 +1,4 @@
-import {
-    CharacterTypes,
-    Character,
-    King,
-    Fighter,
-    Adviser,
-} from './personaje.js';
+import { CharacterTypes, King, Fighter, Adviser, Squire } from './personaje.js';
 
 export const characters = () => {
     // Instanciamos todos los personajes.
@@ -15,6 +9,7 @@ export const characters = () => {
         'rey',
         'Vais a morir todos',
         true,
+        'assets/img/joffrey.jpg',
         3
     );
     const character2: CharacterTypes = new Fighter(
@@ -24,6 +19,7 @@ export const characters = () => {
         'luchador',
         'Primero pego y luego pregunto',
         true,
+        'assets/img/jaime.jpg',
         'espada',
         8
     );
@@ -34,6 +30,7 @@ export const characters = () => {
         'luchadora',
         'Primero pego y luego pregunto',
         true,
+        'assets/img/daenerys.jpg',
         'látigo',
         9
     );
@@ -44,14 +41,19 @@ export const characters = () => {
         'asesor de Daenerys',
         'No sé por qué, pero creo que voy a morir pronto',
         true,
+        'assets/img/tyrion.jpg',
         character3.name
     );
-    const character5: CharacterTypes = new Character(
+    const character5: CharacterTypes = new Squire(
         'Bronn',
         '',
         27,
         'escudero de Jaime',
-        'Soy un loser'
+        'Soy un loser',
+        true,
+        'assets/img/bronn.jpg',
+        character2.name,
+        8
     );
 
     const charactersList0 = [character1, character2, character3];
@@ -63,6 +65,6 @@ export const characters = () => {
         character5,
     ];
 
-    console.table(charactersList0);
     console.table(charactersList1);
+    return charactersList1;
 };
