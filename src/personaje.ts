@@ -1,7 +1,5 @@
 // Montar los datos de cada personaje usando clases
 
-import { StringDecoder } from 'string_decoder';
-
 // Definimos los tipos de valores que tendrá el objeto
 export interface CharacterTypes {
     name: string;
