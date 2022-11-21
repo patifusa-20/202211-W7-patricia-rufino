@@ -1,5 +1,7 @@
 // Montar los datos de cada personaje usando clases
 
+import { StringDecoder } from 'string_decoder';
+
 // Definimos los tipos de valores que tendrá el objeto
 export interface CharacterTypes {
     name: string;
@@ -13,7 +15,7 @@ export interface CharacterTypes {
     years?: number;
     weapon?: string;
     skill?: number;
-    advisedCharacter?: string | undefined;
+    advisedCharacter?: string;
     greasy?: number;
 
     death: () => void;

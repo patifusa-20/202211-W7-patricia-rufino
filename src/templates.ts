@@ -55,7 +55,9 @@ export const createContent = (characters: Array<CharacterTypes>) => {
                                 )}                                  
                                 </ul>
                                 <div class="character__actions">
-                                    <button class="character__action btn" id="btn-talk">
+                                    <button class="character__action btn" id="btn-talk" data-character="${
+                                        item.name
+                                    }">
                                         habla
                                     </button>
                                     <button class="character__action btn">
@@ -69,17 +71,14 @@ export const createContent = (characters: Array<CharacterTypes>) => {
                 </li>`;
     });
     contentTemplate += `</ul></div><div class="comunications">`;
-    characters.forEach((item) => {
-        contentTemplate += `
+    contentTemplate += `
             <p class="comunications__text display-1">
-                ${item.sentence}
             </p>
             <img
                 class="comunications__picture"
-                src="${item.image}"
-                alt="${item.name} ${item.family}"
+                src=""
+                alt=""
             /></div>`;
-    });
 
     return contentTemplate;
 };
