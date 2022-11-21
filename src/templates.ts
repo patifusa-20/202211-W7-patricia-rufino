@@ -25,7 +25,7 @@ const loadCharacterTraits = (character: CharacterTypes) => {
 export const createContent = (characters: Array<CharacterTypes>) => {
     let contentTemplate = `<div class="app container"><ul class="characters-list row list-unstyled">`;
     characters.forEach((item) => {
-        contentTemplate += `<li class="character col">
+        contentTemplate += `<li class="character col" data-name=${item.name}>
                     <div class="card character__card">
                         <img
                             src=${item.image}
@@ -55,10 +55,14 @@ export const createContent = (characters: Array<CharacterTypes>) => {
                                 )}                                  
                                 </ul>
                                 <div class="character__actions">
-                                    <button class="character__action btn" id="btn-talk">
+                                    <button class="character__action btn" id="btn-communication" data-character="${
+                                        item.name
+                                    }">
                                         habla
                                     </button>
-                                    <button class="character__action btn">
+                                    <button class="character__action btn" id="btn-die" data-character="${
+                                        item.name
+                                    }">
                                         muere
                                     </button>
                                 </div>
@@ -69,17 +73,14 @@ export const createContent = (characters: Array<CharacterTypes>) => {
                 </li>`;
     });
     contentTemplate += `</ul></div><div class="comunications">`;
-    characters.forEach((item) => {
-        contentTemplate += `
+    contentTemplate += `
             <p class="comunications__text display-1">
-                ${item.sentence}
             </p>
             <img
                 class="comunications__picture"
-                src="${item.image}"
-                alt="${item.name} ${item.family}"
+                src=""
+                alt=""
             /></div>`;
-    });
 
     return contentTemplate;
 };

@@ -13,7 +13,7 @@ export interface CharacterTypes {
     years?: number;
     weapon?: string;
     skill?: number;
-    advisedCharacter?: string | undefined;
+    advisedCharacter?: string;
     greasy?: number;
 
     death: () => void;
