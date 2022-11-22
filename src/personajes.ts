@@ -7,8 +7,6 @@ export const characters = () => {
         'Baratheon',
         25,
         'rey',
-        'Vais a morir todos',
-        true,
         'assets/img/joffrey.jpg',
         '&#x1F451;',
         3
@@ -18,8 +16,6 @@ export const characters = () => {
         'Lannister',
         35,
         'luchador',
-        'Primero pego y luego pregunto',
-        true,
         'assets/img/jaime.jpg',
         '&#x1F5E1;',
         'espada',
@@ -30,8 +26,6 @@ export const characters = () => {
         'Targaryen',
         34,
         'luchadora',
-        'Primero pego y luego pregunto',
-        true,
         'assets/img/daenerys.jpg',
         '&#x1F5E1;',
         'látigo',
@@ -42,8 +36,6 @@ export const characters = () => {
         'Lannister',
         49,
         'asesor de Daenerys',
-        'No sé por qué, pero creo que voy a morir pronto',
-        true,
         'assets/img/tyrion.jpg',
         '&#x1F393;',
         character3.name
@@ -53,8 +45,6 @@ export const characters = () => {
         '',
         27,
         'escudero de Jaime',
-        'Soy un loser',
-        true,
         'assets/img/bronn.jpg',
         '&#x1F6E1;',
         character2.name,
@@ -64,6 +54,5 @@ export const characters = () => {
     const charactersList = [character1, character2, character3];
     charactersList.push(character4, character5);
 
-    console.table(charactersList);
     return charactersList;
 };

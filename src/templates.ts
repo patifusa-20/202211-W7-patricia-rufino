@@ -55,14 +55,10 @@ export const createContent = (characters: Array<CharacterTypes>) => {
                                 )}                                  
                                 </ul>
                                 <div class="character__actions">
-                                    <button class="character__action btn" id="btn-communication" data-character="${
-                                        item.name
-                                    }">
+                                    <button class="character__action btn" id="btn-communication">
                                         habla
                                     </button>
-                                    <button class="character__action btn" id="btn-die" data-character="${
-                                        item.name
-                                    }">
+                                    <button class="character__action btn" id="btn-die">
                                         muere
                                     </button>
                                 </div>
