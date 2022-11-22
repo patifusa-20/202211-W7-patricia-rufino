@@ -1,4 +1,8 @@
-import { CharacterTypes, King, Fighter, Adviser, Squire } from './personaje.js';
+import { CharacterTypes } from './personaje.js';
+import { King } from './rey.js';
+import { Fighter } from './luchador.js';
+import { Squire } from './escudero.js';
+import { Adviser } from './asesor.js';
 
 export const characters = () => {
     // Instanciamos todos los personajes.
