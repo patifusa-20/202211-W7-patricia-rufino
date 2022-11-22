@@ -15,7 +15,10 @@ renderContent();
 // FUNCIONES BOTONES
 const findCharacterSelected = (event: Event) => {
     const characterBtn = event.target as HTMLButtonElement;
-    const valueCha = characterBtn.getAttribute('data-character');
+    const findNameCharacter = characterBtn.closest(
+        '[data-name]'
+    ) as HTMLLIElement;
+    const valueCha = findNameCharacter.getAttribute('data-name');
     const findCharacter = charactersList.find((item) => item.name === valueCha);
     return findCharacter;
 };
@@ -27,8 +30,8 @@ const renderCommunicationData = (event: Event) => {
     const sentenceCha = (findCharacter as CharacterTypes).sentence;
     const blockSentence = document.querySelector(
         '.display-1'
-    ) as HTMLDivElement;
-    blockSentence.innerHTML = sentenceCha;
+    ) as HTMLParagraphElement;
+    blockSentence.innerHTML = sentenceCha as string;
 
     const imageCha = (findCharacter as CharacterTypes).image;
     const blockImage = document.querySelector(
@@ -53,11 +56,10 @@ communicationButton.forEach((item) => {
 });
 
 // BOTÓN "MUERE"
-
 const renderDieData = (event: Event) => {
     const findCharacter = findCharacterSelected(event);
 
-    (findCharacter as CharacterTypes).isAlive = false;
+    (findCharacter as CharacterTypes).death();
 
     const characterBlock = document.querySelector(
         `[data-name=${(findCharacter as CharacterTypes).name}]`
