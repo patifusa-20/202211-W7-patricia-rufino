@@ -8,7 +8,7 @@ export interface CharacterTypes {
     role: string;
     isAlive: boolean;
     image: string;
-    icon: string;
+    icon?: string;
     sentence?: string;
     years?: number;
     weapon?: string;
@@ -27,8 +27,7 @@ export class Character implements CharacterTypes {
         public family: string,
         public age: number,
         public role: string,
-        public image: string,
-        public icon: string
+        public image: string
     ) {
         this.name = name;
         this.family = family;

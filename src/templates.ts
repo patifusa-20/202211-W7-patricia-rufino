@@ -40,11 +40,7 @@ export const createContent = (characters: Array<CharacterTypes>) => {
                                 <ul class="list-unstyled">
                                     <li>Edad: ${item.age} años</li>
                                     <li>
-                                        Estado:${
-                                            item.isAlive
-                                                ? `<i class="fas fa-thumbs-up"></i>`
-                                                : `<i class="fas fa-thumbs-down"></i>`
-                                        }      
+                                        Estado:<i class="fas fa-thumbs-up"></i>
                                     </li>
                                 </ul>
                             </div>

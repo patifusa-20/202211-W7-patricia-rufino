@@ -40,6 +40,10 @@ const renderCommunicationData = (event: Event) => {
     const attrBlockImage = blockImage.attributes.getNamedItem('src') as Attr;
     attrBlockImage.value = imageCha;
 
+    const nameCha = (findCharacter as CharacterTypes).name;
+    const attrAltBlockImage = blockImage.attributes.getNamedItem('alt') as Attr;
+    attrAltBlockImage.value = nameCha;
+
     function displayComunications() {
         const blockComunications = document.querySelector(
             '.comunications'
@@ -74,6 +78,14 @@ const renderDieData = (event: Event) => {
         '.character__picture'
     ) as HTMLImageElement;
     blockImage.classList.add('character__picture--rotate');
+
+    const thisBtn = event.target as HTMLButtonElement;
+    thisBtn.setAttribute('disabled', '');
+
+    const blockCommunicationBtn = characterBlock.querySelector(
+        '#btn-communication'
+    ) as HTMLButtonElement;
+    blockCommunicationBtn.setAttribute('disabled', '');
 };
 
 const dieButton = document.querySelectorAll('#btn-die');
