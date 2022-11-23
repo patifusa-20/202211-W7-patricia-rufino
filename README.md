@@ -54,7 +54,7 @@ Cada uno de esos personajes puede ser un rey, un luchador, un asesor, o un escud
 
 Crea los siguientes archivos JS y haz que funcionen como módulos mediante import y export:
 
--   [x] `personaje.js`, Rey.js, Luchador.js, Asesor.js, Escudero.js (mete dentro cada clase)
+-   [x] `personaje.js`, `rey.js`, `luchador.js`, `asesor.js`, `escudero.js` (mete dentro cada clase)
 -   [x] `personajes.js` (crea dentro un array con los personajes.
 -   [x] `index.js` (aquí va todo el resto del enunciado, y éste será el punto de entrada)
 
